@@ -19,14 +19,14 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="{{ path ('about')}}">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ path ('about') }}">Nosotros</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Tapas</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Bares</a>
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="{{ path ('bar', {'city':'all'}) }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">Bares</a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
-                            <li><a class="dropdown-item" href="portfolio-overview.html">Valencia</a></li>
-                            <li><a class="dropdown-item" href="portfolio-overview.html">Barcelona</a></li>
-                            <li><a class="dropdown-item" href="portfolio-overview.html">Madrid</a></li>
+                            <li><a class="dropdown-item" href="{{ path ('bar', {'city':'vlc'}) }}">Valencia</a></li>
+                            <li><a class="dropdown-item" href="{{ path ('bar', {'city':'bcn'}) }}">Barcelona</a></li>
+                            <li><a class="dropdown-item" href="{{ path ('bar', {'city':'mdr'}) }}">Madrid</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="#">Reservas</a></li>

@@ -10,3 +10,7 @@ about:
     path: /index/about
     controller: App\Controller\DefaultController::about
 
+bar:
+    path: /bar/{city}
+    controller: App\Controller\DefaultController::bar
+
