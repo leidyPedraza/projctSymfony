@@ -5,3 +5,8 @@ controllers:
 index:
     path: /index
     controller: App\Controller\DefaultController::index
+
+about:
+    path: /index/about
+    controller: App\Controller\DefaultController::about
+
